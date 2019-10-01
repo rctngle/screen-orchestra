@@ -1,15 +1,13 @@
-var socket = io('http://192.168.1.217:3000');
+var socket = io('http://172.17.26.21:3000');
 socket.on('connect', function(){
-	console.log('controller connect');
+	console.log('monitor connect');
 });
 
 socket.on('msg', function(data){
 	console.log('controller event:', data);
-
 	document.querySelector('iframe#main').setAttribute('src', data+'/index.html');
 });
 
 socket.on('disconnect', function(){
 	console.log('controller disconnect');
 });
-

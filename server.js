@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
@@ -19,26 +20,34 @@ app.get('/monitor', function(req, res){
 	res.sendFile(__dirname + '/monitor.html');
 });	
 
+app.get('/animations-actions', function(req, res) {
+	const animations = fs.readdirSync('./animations/');
+	const actions = fs.readdirSync('./actions/');
+
+	res.json({
+		animations: animations,
+		actions: actions,
+	});
+});	
+
+app.get('/ip', function(req, res) {
+	res.json({
+		ip: ip.address(),
+	});
+});	
+
 http.listen(3000, function(){
 	console.log('http://'+ip.address()+':3000');
 });
 
 io.on('connection', function(client){
 	clients.push(client);
-	// console.log(clients.length);
-
-
 	client.on('disconnect', function() {
 		clients.splice(clients.indexOf(client), 1);
 	});
-
-
+ 
 	client.on('msg', function(msg){
 		console.log(clients.length);
 		client.broadcast.emit('msg', msg);
-		// clients.forEach((client) => {
-		// 	console.log('broadcasting: ', msg);
-		// 	client.emit('msg', msg);
-		// });
 	});
 });
