@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<style>
+	body.black {
+		background: black;
+	}
+
+	body.white {
+		background: white;
+	}
+</style>
+
+<script>
+
+let i = 0;
+setInterval(() => {
+
+	if (i % 2 === 0) {
+		document.body.className = 'black';
+	} else {
+		document.body.className = 'white';
+	}
+	i++;
+
+}, 1000);
+
+</script>
+</head>
+<body>
+
+</body>
+
+
+
+</html>
