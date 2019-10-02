@@ -47,7 +47,14 @@ io.on('connection', function(client){
 	});
  
 	client.on('msg', function(msg){
-		console.log(clients.length);
 		client.broadcast.emit('msg', msg);
+	});
+
+	client.on('slider', function(value){
+		client.broadcast.emit('slider', value);
+	});
+
+	client.on('text', function(value){
+		client.broadcast.emit('text', value);
 	});
 });
