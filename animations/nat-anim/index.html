@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+		<style type="text/css">
+	
+
+		body {
+			margin: 0;}
+
+			video {
+				width: 100%;
+				height: 100%;
+			}
+#background: {
+	background-size: 100%
+	background-repeat: no-repeat;
+	background-position:center;
+	mix-blend-mode: exclusion;
+
+height: 100%;
+width: 100%;
+z-index:0;
+
+}
+
+.gifs {
+
+position: fixed;
+z-index: 1; }
+
+#sphere {
+	top: 200px;
+	left: 40px;
+	mix-blend-mode: hard-light;
+}
+#stressed {
+	top: 400px;
+	left: 10px;
+	mix-blend-mode: difference;
+}
+
+		</style>
+	
+</head>
+<body> 
+
+	<div id="background">
+		<video src="anim2.mov" autoplay muted loop></video>
+	</div>
+
+	<div class="gifs" id="sphere">
+		<img src="sphere.gif">
+
+<div id="gifs" id="stressed">
+	<img src="stressed.gif">
+
+
+</body>
+</html>
