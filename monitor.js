@@ -11,3 +11,4 @@ socket.on('msg', function(data){
 socket.on('disconnect', function(){
 	console.log('controller disconnect');
 });
+
