@@ -21,4 +21,4 @@ setInterval(function(){
 	if (counter > tokens.length) {
 		counter = 0;
 	}
-}, 350);
+}, 200);
