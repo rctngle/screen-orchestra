@@ -14,3 +14,8 @@ socket.on('text', function(data){
 		window.onTextChange(data);
 	}
 });
+
+window.onload = function() {
+	const video = document.querySelector('video');
+	console.log(video);
+};
