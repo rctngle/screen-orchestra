@@ -1,4 +1,4 @@
-const ip = '172.17.26.21';
+const ip = '172.17.26.96';
 document.querySelector('#ip').innerHTML = ip;
 
 var socket = io('http://' + ip + ':3000');
