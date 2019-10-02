@@ -12,4 +12,4 @@ function cloneHomer() {
 	_.style.left = Math.floor(Math.random() * 100) + '%';
 }
 
-setInterval(cloneHomer, 1000)
+setInterval(cloneHomer, 300)
