@@ -36,9 +36,9 @@ fetch('http://' + ip + ':3000/animations-actions').then(response => response.jso
 			if (item.indexOf('.') !== 0) {
 				const listItem = document.createElement('li');
 
-				if (item === 'slider') {
+				if (item === 'slide') {
 					listItem.innerHTML = `<button type="button">${item}</button> <input type="range" />`;
-				} else if (item === 'text') {
+				} else if (item === 'say') {
 					listItem.innerHTML = `<button type="button">${item}</button> <input type="text" />`;
 				} else {
 					listItem.innerHTML = `<button type="button">${item}</button>`;
