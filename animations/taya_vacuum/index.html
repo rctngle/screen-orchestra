@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+img {
+  width: 700px;
+  height: 700px;
+/*  border: 1px solid black;
+*/ /* background-color: red;*/
+  position: relative;
+/*  animation-name: example;
+  animation-duration: 30s;*/
+  animation: example 30s infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}*/
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  50%  {left:700px; top:0px;}
+  100%  {left:0px; top:0px;}
+  /*50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}*/
+}
+</style>
+</head>
+<body>
+
+<div><img src="01.png"/></div>
+
+</body>
+</html>
