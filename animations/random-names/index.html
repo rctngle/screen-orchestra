@@ -5,6 +5,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet"> 
 
 	<style type="text/css">
+		body {
+			background-color: #000;
+		}
 		#text_box {
 			position: absolute;
 			box-sizing: border-box;
@@ -24,6 +27,7 @@
     		font-style: bold;
     		font-size: 15vw;
     		text-align: center;
+    		color: lime;
     	}
 
 	</style>
@@ -41,9 +45,10 @@
 		if (name == 'xampp'){
 			name = 'Dario'
 		}
+		name = name.toUpperCase();
 		console.log(name);
 
-		const presentation = ['Hello world', 'My name is ', name, 'How are you?']
+		const presentation = ['Hello world', 'My name is ', name, 'How are you?', 'GOOOOOD!', '']
 
 		const text = document.getElementById('text');
 		let i = 0;
@@ -57,7 +62,7 @@
 
 		}
 
-		setInterval(changeText, 1000);
+		setInterval(changeText, 1300);
 
 
 
