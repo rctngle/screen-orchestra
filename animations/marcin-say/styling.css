@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Fleya-light;
+  src: url(Fleya-light.woff);
+}
+
+h1 {
+  font-family: Fleya-light;
+}

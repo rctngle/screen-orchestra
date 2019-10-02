@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>My Composition</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body {
+				margin: 0;
+				overflow: hidden;
+			}
+			video {
+				position: fixed;
+				width: 100%;
+				height: auto;
+				top: 0;
+				left: 0;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			div {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+			}
+			.red {
+				background-color: red;
+				border-radius: 50%;
+			}
+			.green {
+				background-color: blue;
+			}
+			.blobbs {
+				width: 600px;
+				height: 600px;
+				background: url(blobbs.gif);
+				background-repeat: no-repeat;
+				background-position: center;
+				//border-radius: 30%;
+				background-size: contain;
+			}
+		</style>
+	</head>
+	<body>	
+
+
+		<video autoplay muted loop>
+			<source src="test.mov" type="video/mp4">
+		</video>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
