@@ -9,3 +9,15 @@ li input {
 li.active input {
 	display: inline-block;
 }
+
+#lists {
+	display: flex;
+}
+
+article {
+	padding: 20px;
+}
+
+#animations {
+	columns: 2;
+}

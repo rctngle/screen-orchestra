@@ -9,29 +9,35 @@
 <h1>IP Address: <span id="ip"></span></h1>
 
 <main>
-	<h1>Animations</h1>
-	<p>
-		Create new animations in the animations folder, as many as you want, whatever you want.<br />
-		Sync with GitHub Desktop and they will appear in the list<br />
-		Create them in this format:
-	</p>
-	<ul>
-		<li>
-			Folder-With-Unique-Animation-Name
+	<div id="lists">
+		<article>
+			<h1>Animations</h1>
+			<p>
+				Create new animations in the animations folder, as many as you want, whatever you want.<br />
+				Sync with GitHub Desktop and they will appear in the list<br />
+				Create them in this format:
+			</p>
+
 			<ul>
-				<li>index.html</li>
+				<li>
+					Folder-With-Unique-Animation-Name
+					<ul>
+						<li>index.html</li>
+					</ul>
+				</li>
 			</ul>
-		</li>
-	</ul>
+			<ul id="animations"></ul>
+		</article>
 
-	<ul id="animations"></ul>
-
-	<h1>Actions</h1>
-	<p>
-		In the actions folder, create the following folders, and in each an empty index.html file.<br />
-		rotate, slide, say, sing, pulse
-	</p>
-	<ul id="actions"></ul>
+		<article>
+			<h1>Actions</h1>
+			<p>
+				In the actions folder, create the following folders, and in each an empty index.html file.<br />
+				rotate, slide, say, sing, pulse
+			</p>
+			<ul id="actions"></ul>
+		</article>
+	</div>
 </main>
 
 <script src="/vendor/socket.io/socket.io.js"></script>
